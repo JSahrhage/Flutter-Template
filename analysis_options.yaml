@@ -7,7 +7,7 @@ analyzer:
   errors:
     # allow self-reference to deprecated members (we do this because otherwise we have
     # to annotate every member in every test, assert, etc, when we deprecate something)
-    public_member_api_docs: ignore # TODO: uncomment later
+    public_member_api_docs: ignore # ToDo: uncomment later
     deprecated_member_use_from_same_package: ignore
   exclude:
     - "bin/cache/**"

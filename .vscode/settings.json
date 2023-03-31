@@ -29,5 +29,16 @@
     "kduration",
     "LTRB",
     "unfocus"
-  ]
+  ],
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "ToDo"
+  ],
+  "todo-tree.filtering.excludeGlobs": ["**/linux/**", "**/windows/**"]
 }
