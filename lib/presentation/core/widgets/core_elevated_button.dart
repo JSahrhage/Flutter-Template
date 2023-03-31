@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:template/helper.dart';
+import 'package:template/presentation/core/widgets/core_sized_padding_box.dart';
 
 class CoreElevatedButton extends StatelessWidget {
   const CoreElevatedButton({
@@ -16,20 +17,24 @@ class CoreElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (isSubmitting == null) {
-      return ElevatedButton(
-        onPressed: callback,
-        child: Text(
-          Helper.translate(context, text),
+      return CoreSizedPaddingBox(
+        child: ElevatedButton(
+          onPressed: callback,
+          child: Text(
+            Helper.translate(context, text),
+          ),
         ),
       );
     }
-    return ElevatedButton(
-      onPressed: callback,
-      child: isSubmitting!
-          ? const CircularProgressIndicator.adaptive()
-          : Text(
-              Helper.translate(context, text),
-            ),
+    return CoreSizedPaddingBox(
+      child: ElevatedButton(
+        onPressed: callback,
+        child: isSubmitting!
+            ? const CircularProgressIndicator.adaptive()
+            : Text(
+                Helper.translate(context, text),
+              ),
+      ),
     );
   }
 }

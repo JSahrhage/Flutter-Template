@@ -23,7 +23,7 @@ class AppLocalizationsSetup {
     Locale? locale,
     Iterable<Locale> supportedLocales,
   ) {
-    for (final Locale supportedLocale in supportedLocales) {
+    for (final supportedLocale in supportedLocales) {
       if (supportedLocale.languageCode == locale!.languageCode &&
           supportedLocale.countryCode == locale.countryCode) {
         return supportedLocale;

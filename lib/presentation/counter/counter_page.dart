@@ -27,6 +27,7 @@ class CounterPage extends StatelessWidget {
               },
               text: 'add',
             ),
+            const SizedBox(height: 16),
             CoreElevatedButton(
               callback: () {
                 context.read<CounterBloc>().add(
@@ -35,12 +36,14 @@ class CounterPage extends StatelessWidget {
               },
               text: 'subtract',
             ),
+            const SizedBox(height: 16),
             CoreElevatedButton(
               callback: () {
                 context.read<ThemeCubit>().toggleTheme();
               },
               text: 'change_theme',
             ),
+            const SizedBox(height: 16),
             CoreElevatedButton(
               callback: () {
                 if (context.read<LocaleCubit>().getCurrentLocale() ==

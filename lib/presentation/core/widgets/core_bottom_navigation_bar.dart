@@ -15,10 +15,9 @@ class CoreBottomNavigationBar extends StatelessWidget {
   List<BottomNavigationBarItem> _createBottomNavigationBarItems(
     BuildContext context,
   ) {
-    final List<BottomNavigationBarItem> bottomNavigationBarItems = [];
+    final bottomNavigationBarItems = <BottomNavigationBarItem>[];
     for (final item in items) {
-      final BottomNavigationBarItem bottomNavigationBarItem =
-          BottomNavigationBarItem(
+      final bottomNavigationBarItem = BottomNavigationBarItem(
         icon: item,
         label: '',
       );
