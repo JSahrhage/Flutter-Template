@@ -3,8 +3,8 @@ import 'package:template/helper.dart';
 
 class CoreSuccessAlertDialog extends StatelessWidget {
   const CoreSuccessAlertDialog({
-    super.key,
     required this.text,
+    super.key,
   });
 
   final String text;

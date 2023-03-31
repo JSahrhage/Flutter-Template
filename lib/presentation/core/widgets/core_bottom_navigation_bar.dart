@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class CoreBottomNavigationBar extends StatelessWidget {
   const CoreBottomNavigationBar({
-    super.key,
     required this.callback,
     required this.items,
     required this.selectedIndex,
+    super.key,
   });
 
   final void Function(int) callback;
@@ -29,7 +29,7 @@ class CoreBottomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return DecoratedBox(
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(30),
@@ -41,8 +41,8 @@ class CoreBottomNavigationBar extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(30.0),
-          topRight: Radius.circular(30.0),
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
         ),
         child: BottomNavigationBar(
           backgroundColor: Theme.of(context).colorScheme.secondary,

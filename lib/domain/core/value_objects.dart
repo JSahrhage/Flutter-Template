@@ -18,7 +18,7 @@ abstract class ValueObject<T> {
 
   Either<ValueFailure<dynamic>, Unit> get failureOrUnit {
     return value.fold(
-      (ValueFailure<T> l) => left(l),
+      left,
       (T r) => right(unit),
     );
   }

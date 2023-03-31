@@ -3,9 +3,9 @@ import 'package:template/helper.dart';
 
 class CoreInstructionText extends StatelessWidget {
   const CoreInstructionText({
-    super.key,
     required this.text,
     this.textScaleFactor,
+    super.key,
   });
 
   final String text;

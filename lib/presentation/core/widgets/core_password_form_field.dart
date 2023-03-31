@@ -3,11 +3,11 @@ import 'package:template/helper.dart';
 
 class CorePasswordFormField extends StatelessWidget {
   const CorePasswordFormField({
-    super.key,
     required this.formFieldCallback,
     required this.iconButtonCallback,
     required this.isPasswordVisible,
     this.initialValue,
+    super.key,
   });
 
   final void Function(String) formFieldCallback;
@@ -35,7 +35,7 @@ class CorePasswordFormField extends StatelessWidget {
             ),
             labelText: Helper.translate(context, 'password'),
           ),
-          onChanged: (value) => formFieldCallback(value),
+          onChanged: formFieldCallback,
           initialValue: initialValue ?? '',
           autocorrect: false,
           obscureText: !isPasswordVisible,

@@ -4,10 +4,10 @@ import 'package:template/helper.dart';
 
 class CoreBottomLabelNavigationBar extends StatelessWidget {
   const CoreBottomLabelNavigationBar({
-    super.key,
     required this.callback,
     required this.items,
     required this.selectedIndex,
+    super.key,
   });
 
   final void Function(int) callback;
@@ -31,7 +31,7 @@ class CoreBottomLabelNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return DecoratedBox(
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(30),
@@ -43,8 +43,8 @@ class CoreBottomLabelNavigationBar extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(30.0),
-          topRight: Radius.circular(30.0),
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
         ),
         child: BottomNavigationBar(
           backgroundColor: Theme.of(context).colorScheme.secondary,

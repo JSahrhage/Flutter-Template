@@ -13,15 +13,15 @@ void main() {
     test('initial state is 42', () {
       expect(counterBloc.state.count, 42);
     });
-    blocTest(
+    blocTest<CounterBloc, CounterState>(
       'emits [const CounterState(count: 43)] when CounterEvent.add() is added',
       build: () => counterBloc,
       act: (bloc) => bloc.add(const CounterEvent.add()),
       expect: () => [const CounterState(count: 43)],
     );
 
-    blocTest(
-      'emits [const CounterState(count: 40)] when CounterEvent.subtract() is added',
+    blocTest<CounterBloc, CounterState>(
+      '''emits [const CounterState(count: 40)] when CounterEvent.subtract() is added''',
       build: () => counterBloc,
       act: (bloc) => bloc.add(const CounterEvent.subtract()),
       expect: () => [const CounterState(count: 40)],

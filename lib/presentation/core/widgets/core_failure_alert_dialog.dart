@@ -3,8 +3,8 @@ import 'package:template/helper.dart';
 
 class CoreFailureAlertDialog extends StatelessWidget {
   const CoreFailureAlertDialog({
-    super.key,
     required this.text,
+    super.key,
   });
 
   final String text;

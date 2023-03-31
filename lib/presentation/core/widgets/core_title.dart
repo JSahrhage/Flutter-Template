@@ -5,9 +5,9 @@ import 'package:template/presentation/core/widgets/core_sized_padding_box.dart';
 
 class CoreTitle extends StatelessWidget {
   const CoreTitle({
-    super.key,
     required this.text,
     this.fontSize,
+    super.key,
   });
 
   final String text;

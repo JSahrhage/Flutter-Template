@@ -6,13 +6,13 @@ import 'package:template/presentation/core/widgets/core_sized_padding_box.dart';
 
 class CoreInkwellCard extends StatelessWidget {
   const CoreInkwellCard({
-    super.key,
     required this.callback,
     required this.underlyingObjId,
     required this.cardTitle,
     required this.icon,
     required this.imageURL,
     this.height,
+    super.key,
   });
 
   final void Function(String) callback;

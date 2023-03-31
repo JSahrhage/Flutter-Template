@@ -4,10 +4,10 @@ import 'package:template/presentation/core/presentation_config.dart' as config;
 
 class CoreInkwellCardImage extends StatelessWidget {
   const CoreInkwellCardImage({
-    super.key,
     required this.icon,
     required this.imageURL,
     this.size,
+    super.key,
   });
 
   final IconData icon;

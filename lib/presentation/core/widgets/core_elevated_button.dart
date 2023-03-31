@@ -3,10 +3,10 @@ import 'package:template/helper.dart';
 
 class CoreElevatedButton extends StatelessWidget {
   const CoreElevatedButton({
-    super.key,
     required this.callback,
     required this.text,
     this.isSubmitting,
+    super.key,
   });
 
   final VoidCallback callback;

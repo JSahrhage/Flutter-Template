@@ -9,4 +9,4 @@ const double kInkwellCardImageSize = 80;
 const double kInkwellCardFontSize = 20;
 const double kCheckboxRowFontSize = 20;
 const int kRefreshIndicatorDuration = 1;
-BorderRadius kImageBorderRadius = BorderRadius.circular(32.0);
+BorderRadius kImageBorderRadius = BorderRadius.circular(32);

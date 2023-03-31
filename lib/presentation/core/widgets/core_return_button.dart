@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CoreReturnButton extends StatelessWidget {
   const CoreReturnButton({
-    super.key,
     required this.callback,
+    super.key,
   });
 
   final VoidCallback callback;

@@ -4,10 +4,10 @@ import 'package:template/presentation/core/presentation_config.dart' as config;
 
 class CoreTextButton extends StatelessWidget {
   const CoreTextButton({
-    super.key,
     required this.callback,
     required this.text,
     this.fontSize,
+    super.key,
   });
 
   final VoidCallback callback;

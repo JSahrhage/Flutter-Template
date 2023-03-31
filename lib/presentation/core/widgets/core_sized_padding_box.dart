@@ -3,10 +3,10 @@ import 'package:template/presentation/core/presentation_config.dart' as config;
 
 class CoreSizedPaddingBox extends StatelessWidget {
   const CoreSizedPaddingBox({
-    super.key,
     required this.child,
     this.padding,
     this.height,
+    super.key,
   });
 
   final Widget child;

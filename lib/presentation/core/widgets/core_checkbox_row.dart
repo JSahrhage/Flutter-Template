@@ -4,13 +4,13 @@ import 'package:template/presentation/core/presentation_config.dart' as config;
 
 class CoreCheckboxRow extends StatelessWidget {
   const CoreCheckboxRow({
-    super.key,
     required this.callback,
     required this.text,
     required this.value,
+    super.key,
   });
 
-  final Function(bool?) callback;
+  final void Function(bool?) callback;
   final String text;
   final bool value;
 

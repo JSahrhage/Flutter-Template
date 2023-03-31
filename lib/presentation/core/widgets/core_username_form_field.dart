@@ -3,9 +3,9 @@ import 'package:template/helper.dart';
 
 class CoreUsernameFormField extends StatelessWidget {
   const CoreUsernameFormField({
-    super.key,
     required this.callback,
     this.initialValue,
+    super.key,
   });
 
   final void Function(String) callback;
@@ -28,7 +28,7 @@ class CoreUsernameFormField extends StatelessWidget {
         ),
         labelText: Helper.translate(context, 'username'),
       ),
-      onChanged: (value) => callback(value),
+      onChanged: callback,
       initialValue: initialValue ?? '',
       autocorrect: false,
     );

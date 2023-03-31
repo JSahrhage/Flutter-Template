@@ -3,9 +3,9 @@ import 'package:template/helper.dart';
 
 class CoreEmailFormField extends StatelessWidget {
   const CoreEmailFormField({
-    super.key,
     required this.callback,
     this.initialValue,
+    super.key,
   });
 
   final void Function(String) callback;
@@ -28,7 +28,7 @@ class CoreEmailFormField extends StatelessWidget {
         ),
         labelText: Helper.translate(context, 'email'),
       ),
-      onChanged: (value) => callback(value),
+      onChanged: callback,
       initialValue: initialValue ?? '',
       autocorrect: false,
     );

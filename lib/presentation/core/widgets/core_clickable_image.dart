@@ -4,12 +4,12 @@ import 'package:template/presentation/core/widgets/core_image.dart';
 
 class CoreClickableImage extends StatelessWidget {
   const CoreClickableImage({
-    super.key,
     required this.callback,
     required this.icon,
     required this.imageURL,
     this.size,
     this.alignment,
+    super.key,
   });
 
   final VoidCallback callback;
