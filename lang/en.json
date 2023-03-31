@@ -1,0 +1,11 @@
+{
+    "failure": "Failure",
+    "success": "Success",
+    "email": "E-Mail-Address",
+    "password": "Password",
+    "username": "Username",
+    "add": "Add",
+    "subtract": "Subtract",
+    "change_theme": "Change Theme",
+    "change_language": "Change Language"
+}

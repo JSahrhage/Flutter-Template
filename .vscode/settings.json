@@ -1,0 +1,33 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.language": ["en", "de"],
+  "cSpell.userWords": ["flutter", "pubspec", "devtools"],
+  "cSpell.ignorePaths": [
+    "**/*.dart.js",
+    "**/*.freezed.dart",
+    "**/*.g.dart",
+    "**/*.pb.dart",
+    "**/*.pbenum.dart",
+    "**/*.pbjson.dart",
+    "**/*.pbserver.dart",
+    "**/*.pbserver.go.dart",
+    "**/*.pbmeta.dart",
+    "build/",
+    "ios/",
+    "android/",
+    "web/",
+    "**/analysis_options.yaml",
+    "**/.vscode/settings.json",
+    "~/.pub-cache/**"
+  ],
+  "cSpell.words": [
+    "ARGB",
+    "autocorrect",
+    "Cupertino",
+    "fpdart",
+    "kdefault",
+    "kduration",
+    "LTRB",
+    "unfocus"
+  ]
+}

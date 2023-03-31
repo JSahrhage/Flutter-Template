@@ -1,0 +1,11 @@
+{
+    "failure": "Fehler",
+    "success": "Erfolg",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "username": "Anzeigename",
+    "add": "Addiere",
+    "subtract": "Ziehe ab",
+    "change_theme": "Ändere Theme",
+    "change_language": "Ändere Sprache"
+}
